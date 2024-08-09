@@ -1,0 +1,59 @@
+<html>
+
+<head>
+
+   <title>Signup form</title>
+
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- <input type="text" id="text" class="text" value="" onkeyup="changeText()">
+    <p id="err" class="err">Error</p>
+    <button class="buttn">click</button> -->
+    <!-- 
+    <script>
+
+        function changeText() {
+            let txt = document.getElementById("text")
+            let err = document.getElementById("err")
+            let reg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            let result = reg.test(text.value)
+
+            if (result) {
+                console.log(true);
+                err.style.visibility = "hidden"
+
+            } else {
+                console.log(false);
+                err.style.visibility = "visible"
+
+            }
+        }
+    </script> -->
+
+    <!-- ............................................................................ -->
+
+    <form class="main">
+        <div class="text2">
+            <h1>SIGN UP</h1>
+            <input type="text" class="text" id="usrnme" value="" placeholder="username">
+            <p id="usrerr" class="err1">Enter a valid username</p>
+            <br>
+            <input type="text" class="text" id="passwrd" placeholder="password">
+            <p id="passerr" class="err1">Enter a strong password</p>
+            <br>
+            <input type="text" class="text" id="mail" placeholder="mail id">
+            <p id="mailerr" class="err1">Enter a valid email</p>
+            <div class="buttn2">
+                <button type="button" onclick="signin()">submit</button>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
